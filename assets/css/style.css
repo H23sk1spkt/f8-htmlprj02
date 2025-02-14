@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+html , body {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins";
+}
+/*commom */
+.content {
+    max-width: calc(100% - 270px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    /* có thể tùy chỉnh số dòng nếu để trống là 2  */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* 4 dòng này đẻ nếu đoạn văn vượt mức thì sẽ ra dấu ... */
+    }
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75px; 
+    cursor: pointer;
+}
+/* header  */
+.header {
+    background: #FFFCF4;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top:47px ;
+}
+.navbar ul {
+    display: flex;
+    margin-left: 491px;
+}
+.navbar ul a {
+    padding-left:21px;
+    padding-right: 21px;;
+    color: #171100;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75px;
+} 
+.navbar ul a:hover {
+    text-decoration: underline;
+} 
+.navbar .action {
+    border-radius: 24.5px;
+    background: #171100;
+    margin-left: auto;
+
+}
+.navbar .btn {
+    display: flex;
+    padding: 15px 41px;
+    border-radius: 8px;
+}
+
+
+
