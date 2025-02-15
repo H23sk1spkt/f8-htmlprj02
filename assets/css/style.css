@@ -41,6 +41,8 @@ a {
     font-weight: 600;
     line-height: 1.75px; 
     cursor: pointer;
+    background: #171100;
+
 }
 /* header  */
 .header {
@@ -218,6 +220,117 @@ a {
     padding: 24px 0;
     margin-left: 16px;
 }
+/* course */
+.course-des {
+    margin-top: 200px;
+  
+}
+.course-des .info {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.course .title {
+    display: flex;
+}
+.course .title img {
+    margin-left: auto;
+}
+.course .img-item {
+    border-radius: 12px 12px 0px 0px;
+    width: 370px;
+    height: 278px;
+}
+.course .sub-title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.23;
+    letter-spacing: -0.76px;
+}
+.course .des-title {
+    margin-top: 22px;
+    width: 458px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.course .sub-title1 {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+.course .des-range {
+    color: #FEA31B;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75; 
+}
+.course .des-item {
+    padding : 16px 22px 22px 22px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid #E2DFDA;
+    border-top: 0px;
+    background: #FFF;
+}
+.course .des-item .des {
+    margin-top: 6px;
+    color: #5F5B53;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875;
+}
+.course .money {
+    display: inline-block;
+    color: #171100;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.667;
+}
+.course .row {
+    display: flex;
+}
+.course .img-range {
+    margin-left: auto;
+}
+.course .btn {
+    padding: 11px 24px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.875; 
+    border-radius: 25px;
+    margin-left: auto;
+}
+.course .book {
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+}
+.course .btn1 {
+    background: #FFB900;
+}
+
+
+
 
 
 
