@@ -47,30 +47,48 @@ a {
 /* header  */
 .header {
     background: #FFFCF4;
+    position: sticky;
+    z-index: 1;
+    top: -24px;
 }
 .navbar {
     display: flex;
     align-items: center;
-    padding-top:47px ;
+    padding-top:36px;
+    padding-bottom: 12px;
 }
 .navbar ul {
     display: flex;
     margin-left: 491px;
 }
 .navbar ul a {
-    padding-left:21px;
-    padding-right: 21px;;
-    color: #171100;
+    padding: 0 21px;
+    color:#5F5B53;
     text-align: center;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
     line-height: 1.75px;
 } 
-.navbar ul a:hover {
-    text-decoration: underline;
+.navbar ul .active {
+    color: #171100;
+    position: relative;
 } 
+.navbar ul .active::after {
+    bottom: -11px;
+    left:22px;
+    position: absolute;
+    display: inline-block;
+    content:"";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+.navbar ul a:hover {
+    color: #171100;
+}
 .navbar .action {
     border-radius: 24.5px;
     background: #171100;
@@ -80,15 +98,13 @@ a {
 .navbar .btn {
     display: flex;
     padding: 22px 41px;
-    border-radius: 8px;
+    border-radius: 24.5px;
 }
 /* main */
 /* hero-wrap */
 .hero-wrap {
     background: #FFFCF4;
-    height:100vh;
-    padding-bottom: 65px;
-    padding-top: 75px;
+    height: 100vh;
 }
 .hero {
     display: flex;
@@ -111,7 +127,7 @@ a {
 .hero-wrap h1 {
     color: #171100;
     font-family: Sen;
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.17;
@@ -325,7 +341,7 @@ a {
     margin-top: 12px;
     align-items: center;
 }
-.course .btn1 {
+.course .btn:hover {
     background: #FFB900;
 }
 /* review */ 
@@ -480,6 +496,189 @@ a {
     padding: 25px 32px 22px;
     border-radius: 26px;
     background: #FFB900;
+}
+/* blog */
+.blog {
+    margin-top: 200px;
+    padding:96px 0 ;
+    background: #FFFCF4;
+}
+.blog .blog-des {
+    text-align: center;
+}
+.blog .row {
+    display: flex;
+    gap: 30px;
+}
+.blog .title {
+    color: #130606;
+    text-align: center;
+    font-family: Sen;
+    font-size:2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26; 
+    letter-spacing: -0.76px;
+}
+.blog .des {
+    display: inline-block;
+    width: 448px;
+    margin-top: 16px;
+    margin-bottom: 55px;
+    color: #696262;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75; 
+}
+.blog .sub-title {
+    color: #171100;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.875;
+    display: inline-block;
+    margin-top: 12px;
+}
+.blog .item-date {
+    color: #5F5B53;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875; 
+    display: inline-flex;
+    /* dùng này để vừa inline được mà vừa có thể tạo flexbox cho các thẻ con absolute nó */
+    position: relative;
+    padding-bottom:12px ;
+}
+.blog .item-date::before {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-top: 10px;
+    margin-right: 4px;
+    border-radius: 50%;
+    background:#FFB900;;
+    content: "";
+}
+.blog .item-date::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    content: "";
+    width: 160px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #E2DFDA;
+}
+.blog .item {
+    padding: 20px 20px 28px 20px;
+background: #FFF;
+}
+.blog .btn {
+    margin-top: 12px;
+    padding: 24px 15px;
+    border-radius: 25px;
+    background: #171100;
+}
+.blog .btn:hover {
+    background: #FFB900;
+}
+.blog .dots {
+    margin-top: 38px;
+    display: flex;
+    gap:6px;
+    justify-content: center;
+}
+.blog .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+    cursor: pointer;
+}
+.blog .dot-active {
+    background: #FFB900;
+}
+.blog .dot-active:hover {
+    cursor: normal;
+}
+/* contact */ 
+.contact {
+    background: #2E2100;
+    padding: 96px 0 28px 0;
+}
+.contact .row {
+    display: flex;
+}
+.contact .des {
+    max-width: 267px;
+    color: #BFBCB2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.85;
+    margin: 18px 0;
+    
+}
+.contact .sub-title {
+    padding-bottom: 14px;
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height:1.75;
+    position: relative;
+}
+.contact .sub-title::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    background: #59554B;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.contact .des-sub {
+    display: inline-block;
+    color: #BFBCB2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.875; /* 185.714% */
+}
+.contact .copyright {
+    margin-top: 28px;
+    color: #807D74;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.875;
+}
+.contact .lesion {
+    width: 35%;
+}
+.contact .contact-sub:nth-child(1){
+    width: 22%;
+}
+.contact .contact-sub:nth-child(2){
+    width: 22.2%;
+}
+.contact .contact-sub:nth-child(3){
+    width: 22.8%;
+}
+.contact ul {
+    margin-top: 28px;
+}
+.contact ul li a {
+    margin-bottom: 12px;
+}
+.contact strong {
+    color: #fff;
+}
+.contact span {
+    display: inline-block;
+    width: calc(100vw - 270px);
+    height: 1px;
+    background: #59554B;
 }
 
 
