@@ -506,9 +506,16 @@ a {
 .blog .blog-des {
     text-align: center;
 }
+.blog .blog-item {
+    width: calc(33.33% - 20px);
+    border-radius: 16px;
+    /* transition: all ease 3s;
+    transform: translateX(-100%); */
+}
 .blog .row {
     display: flex;
     gap: 30px;
+    overflow: hidden;
 }
 .blog .title {
     color: #130606;
@@ -603,7 +610,7 @@ background: #FFF;
     cursor: normal;
 }
 /* contact */ 
-.contact {
+.footer {
     background: #2E2100;
     padding: 96px 0 28px 0;
 }
