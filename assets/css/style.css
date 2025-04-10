@@ -41,7 +41,6 @@ a {
     font-weight: 600;
     line-height: 1.75px; 
     cursor: pointer;
-    background: #171100;
 
 }
 /* header  */
@@ -90,8 +89,7 @@ a {
     color: #171100;
 }
 .navbar .action {
-    border-radius: 24.5px;
-    background: #171100;
+    display:flex;
     margin-left: auto;
 
 }
@@ -99,6 +97,11 @@ a {
     display: flex;
     padding: 22px 41px;
     border-radius: 24.5px;
+    border-radius: 24.5px;
+    background: #171100;
+}
+.navbar .btn1 {
+    display: flex;
 }
 /* main */
 /* hero-wrap */
@@ -237,27 +240,30 @@ a {
     margin-left: 16px;
 }
 /* course */
-.course-des {
+.price-des {
     margin-top: 200px;
   
 }
-.course-des .info {
+.price .info-item {
+    width: 33%
+}
+.price-des .info {
     display: flex;
     gap: 30px;
     margin-top: 50px;
 }
-.course .title {
+.price .title {
     display: flex;
 }
-.course .title img {
+.price .title img {
     margin-left: auto;
 }
-.course .img-item {
+.price .img-item {
     border-radius: 12px 12px 0px 0px;
     width: 370px;
     height: 278px;
 }
-.course .sub-title {
+.price .sub-title {
     color: #171100;
     font-family: Sen;
     font-size: 2rem;
@@ -266,7 +272,7 @@ a {
     line-height: 1.23;
     letter-spacing: -0.76px;
 }
-.course .des-title {
+.price .des-title {
     margin-top: 22px;
     width: 458px;
     color: #5F5B53;
@@ -276,7 +282,7 @@ a {
     font-weight: 400;
     line-height: 30px;
 }
-.course .sub-title1 {
+.price .sub-title1 {
     color: #171100;
     font-family: Poppins;
     font-size: 18px;
@@ -284,7 +290,7 @@ a {
     font-weight: 600;
     line-height: 30px;
 }
-.course .des-range {
+.price .des-range {
     color: #FEA31B;
     font-family: Poppins;
     font-size: 16px;
@@ -292,7 +298,7 @@ a {
     font-weight: 400;
     line-height: 1.75; 
 }
-.course .des-item {
+.price .des-item {
     padding : 16px 22px 22px 22px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -300,7 +306,7 @@ a {
     border-top: 0px;
     background: #FFF;
 }
-.course .des-item .des {
+.price .des-item .des {
     margin-top: 6px;
     color: #5F5B53;
     font-family: Poppins;
@@ -309,7 +315,7 @@ a {
     font-weight: 400;
     line-height: 1.875;
 }
-.course .money {
+.price .money {
     display: inline-block;
     color: #171100;
     font-family: Poppins;
@@ -318,13 +324,13 @@ a {
     font-weight: 600;
     line-height: 1.667;
 }
-.course .row {
+.price .row {
     display: flex;
 }
-.course .img-range {
+.price .img-range {
     margin-left: auto;
 }
-.course .btn {
+.price .btn {
     padding: 11px 24px;
     color: #FFF;
     text-align: center;
@@ -336,12 +342,12 @@ a {
     border-radius: 25px;
     margin-left: auto;
 }
-.course .book {
+.price .book {
     display: flex;
     margin-top: 12px;
     align-items: center;
 }
-.course .btn:hover {
+.price .btn:hover {
     background: #FFB900;
 }
 /* review */ 
@@ -398,105 +404,6 @@ a {
     top: -30px;
     left: 241px;
 }
-/* sign up */
-.sign-up .row {
-    display: flex;
-}
-.sign-up .img2 {
-    display: block;
-    width: 270px;
-    margin-left: 30px;
-}
-.sign-up .img1 {
-    display: block;
-    width: 270px;
-    margin-top: 34px;
-
-
-}
-.sign-up .img  {
-    width: 50%;
-    display: flex;
-}
-.sign-up .sign {
-    width: 50%;
-    margin-left: 130px;
-}
-.sign-up .sub-title {
-    margin-top: 58px;
-    color: #171100;
-    font-family: Sen;
-    font-size: 38px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.26;
-    letter-spacing: -0.76px;
-}
-.sign-up .des {
-    margin: 16px 0;
-    color: #5F5B53;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75;
-}
-.sign-up span {
-    margin-bottom: 32px;
-    display: block;
-    color: #5F5B53;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-.sign-up .btn {
-    padding: 21px 37px;
-    border-radius: 26px;
-    background: #FFB900;
-}
-/* join */
-.join {
-    margin-top: 200px;
-}
-.join .row {
-    display: flex;
-}
-.join .des {
-    margin-top: 71px;
-}
-.join .sub-title {
-    color: #171100;
-    font-family: Sen;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.26; /* 126.316% */
-    letter-spacing: -0.76px;
-}
-.join .join-des {
-    margin-top: 16px;
-    margin-bottom: 32px;
-    color: #5F5B53;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-.join .des , .join .img {
-    width: 50%;
-}
-.join .img-join {
-    display: block;
-    margin-left: 130px;
-}
-.join .btn {
-    padding: 25px 32px 22px;
-    border-radius: 26px;
-    background: #FFB900;
-}
 /* blog */
 .blog {
     margin-top: 200px;
@@ -507,14 +414,14 @@ a {
     text-align: center;
 }
 .blog .blog-item {
-    width: calc(33.33% - 20px);
+    width: calc(20% - 16px);
     border-radius: 16px;
     /* transition: all ease 3s;
     transform: translateX(-100%); */
 }
 .blog .row {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     overflow: hidden;
 }
 .blog .title {
@@ -580,6 +487,9 @@ a {
 .blog .item {
     padding: 20px 20px 28px 20px;
 background: #FFF;
+}
+.blog .item span {
+    display :block
 }
 .blog .btn {
     margin-top: 12px;
